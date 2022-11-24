@@ -1,0 +1,6925 @@
+[Main]
+FileType=CIR
+Version=12.00
+Program=Micro-Cap
+Component Version=10.00
+Shape Version=11.00
+Screen=1366,768
+MCAPVersion=12.2.0.5
+Key ID=Demo
+NLCnt=560
+TXCnt=109
+
+[shapedef]
+Name=And2
+Root="And.root",0,0,0
+
+[shapedef]
+Name=And.root
+Line=0,0,9,0
+Line=0,16,9,16
+Line=9,20,9,-4
+Line=27,20,9,20
+Line=9,-4,27,-4
+Line=40,8,48,8
+Arc=12,-4,40,20 , 28,32,28,-16
+
+[shapedef]
+Name=Battery
+Line=0,0,22,0
+Line=22,-3,22,3
+Line=26,-7,26,7
+Line=26,0,48,0
+Current=32,8,16,8
+
+[shapedef]
+Name=DFF
+Rectangle=0,-8,64,56
+FColor=None
+Line=-8,0,0,0
+Ellipse=30,-12,34,-8
+FColor=None
+Ellipse=30,56,34,60
+FColor=None
+Ellipse=64,46,68,50
+FColor=None
+Line=68,48,72,48
+Line=0,24,-8,24
+Line=0,16,8,24
+Line=8,24,0,32
+Line=64,0,72,0
+Line=32,60,32,72
+Line=32,-12,32,-24
+
+[shapedef]
+Name=Fixed
+Line=8,0,32,0
+Line=8,0,0,-8
+Line=8,0,0,8
+
+[shapedef]
+Name=Ground
+Line=0,0,12,0
+Line=12,-8,12,8
+Line=18,-4,18,4
+Line=24,0,24,0
+
+[shapedef]
+Name=Inv
+Root="Inv.root",0,0,0
+
+[shapedef]
+Name=Inv.root
+Line=8,-16,8,16
+Line=8,-16,40,0
+Line=8,16,40,0
+Line=0,0,8,0
+Ellipse=40,-2,44,2
+FColor=None
+Line=44,0,47,0
+Line=46,0,48,0
+
+[shapedef]
+Name=Jnpc
+Rectangle=8,-8,72,56
+FColor=None
+Line=0,0,8,0
+Line=0,48,8,48
+PolyClosed=3
+PolyLine=8,16
+PolyLine=16,24
+PolyLine=8,32
+FColor=None
+Ellipse=38,-12,42,-8
+FColor=None
+Ellipse=38,56,42,60
+FColor=None
+Ellipse=72,46,76,50
+FColor=None
+Ellipse=4,22,8,26
+FColor=None
+Line=4,24,0,24
+Line=76,48,80,48
+Line=72,0,80,0
+Line=40,60,40,72
+Line=40,-12,40,-24
+
+[shapedef]
+Name=Minus.root
+Line=-2,0,2,0
+
+[shapedef]
+Name=Opamp5
+Root="Opamp.root",0,0,0
+Root="Plus.root",25,-4,0
+Root="Minus.root",25,52,0
+Line=32,56,32,34
+Line=32,-8,32,13
+
+[shapedef]
+Name=Opamp.root
+Line=0,48,6,48
+Line=0,0,5,0
+Line=6,-4,6,52
+Line=6,-4,48,24
+Line=6,52,48,24
+Line=48,24,72,24
+Line=10,12,14,12
+Line=12,10,12,14
+Line=10,36,14,36
+Line=4,0,6,0
+
+[shapedef]
+Name=Or2
+Root="Or.root",0,0,0
+
+[shapedef]
+Name=Or.root
+Line=42,8,48,8
+Line=0,0,10,0
+Line=0,16,10,16
+Line=24,-4,6,-4
+Line=6,20,24,20
+Arc=5,-4,43,34 , 42,8,24,-4
+Arc=0,-4,12,20 , 6,20,6,-4
+Arc=5,-18,43,20 , 24,20,42,8
+
+[shapedef]
+Name=Plus.root
+Line=-2,0,2,0
+Line=0,-2,0,2
+
+[shapedef]
+Name=Resistor
+PolyOpen=12
+PolyLine=0,0
+PolyLine=0,0
+PolyLine=12,0
+PolyLine=14,-4
+PolyLine=18,4
+PolyLine=22,-4
+PolyLine=26,4
+PolyLine=30,-4
+PolyLine=34,4
+PolyLine=36,0
+PolyLine=48,0
+PolyLine=48,0
+Current=32,8,16,8
+
+[shapedef]
+Name=SPICE_V
+Root="Vsource.root",0,0,0
+
+[shapedef]
+Name=STIM1
+Arc=50,-8,62,8 , 56,8,62,0
+Arc=50,-8,62,8 , 62,0,56,-8
+Line=13,8,57,8
+Arc=8,-8,18,8 , 13,-8,8,0
+Ellipse=53,-3,59,3
+Line=64,0,72,0
+Arc=8,-8,18,8 , 8,0,13,8
+Line=13,-8,57,-8
+Line=56,0,64,0
+Line=17,4,22,4
+Line=22,4,22,-5
+Line=22,-5,29,-5
+Line=29,-5,29,4
+Line=29,4,33,4
+Line=33,4,33,-5
+Line=33,-5,36,-5
+Line=36,-5,36,4
+Line=36,4,41,4
+Line=41,4,41,-5
+Line=41,-5,43,-5
+
+[shapedef]
+Name=StimClock
+Arc=50,-8,62,8 , 56,8,62,0
+Arc=50,-8,62,8 , 62,0,56,-8
+Line=13,8,57,8
+Arc=8,-8,18,8 , 13,-8,8,0
+Ellipse=53,-3,59,3
+Line=64,0,72,0
+Arc=8,-8,18,8 , 8,0,13,8
+Line=13,-8,57,-8
+Line=56,0,64,0
+Line=16,4,20,4
+Line=20,4,20,-4
+Line=20,-4,24,-4
+Line=24,-4,24,4
+Line=24,4,28,4
+Line=28,4,28,-4
+Line=28,-4,32,-4
+Line=32,-4,32,4
+Line=32,4,36,4
+Line=36,4,36,-4
+Line=36,-4,40,-4
+Line=40,-4,40,4
+Line=40,4,44,4
+Line=44,4,44,-4
+Line=44,-4,48,-4
+Line=48,-4,48,4
+Line=48,4,52,4
+
+[shapedef]
+Name=Vsource.root
+Line=0,0,12,0
+Line=36,0,48,0
+Ellipse=12,-12,36,12
+FColor=None
+Line=7,5,7,9
+Root="Plus.root",41,7,0
+Current=32,16,16,16
+
+[compdef]
+Name=Battery
+Definition=Battery
+Shape=Battery
+Mask=7937
+Used=58
+memo=Battery
+Label Offset=19,7,10,13
+PinCnt=2
+Pin="Plus",6,0,-4,-5
+Pin="Minus",0,0,-10,-5
+
+[compdef]
+Name=Ground
+Definition=Ground
+Shape=Ground
+Mask=1793
+Used=284
+memo=Ground
+Label Offset=0,0,0,0
+PinCnt=1
+Pin="PinA",0,0,-3,-7
+
+[compdef]
+Name=Opamp
+Definition=Opamp
+Shape=Opamp5
+Mask=5121
+Used=10
+memo=Opamp
+Label Offset=44,29,-14,39
+PinCnt=5
+Pin="Plus input",0,0,-31,-7
+Pin="Minus input",0,6,-33,20
+Pin="VEE",4,7,3,-5
+Pin="Output",9,3,-13,-4
+Pin="VCC",4,-1,5,14
+
+[compdef]
+Name=Resistor
+Definition=Resistor
+Shape=Resistor
+Mask=6913
+Used=201
+memo=Resistor
+Label Offset=18,6,8,11
+PinCnt=2
+Pin="Plus",6,0,-10,-4
+Pin="Minus",0,0,-14,-4
+
+[compdef]
+Name=DFF
+Definition=DFF
+Shape=DFF
+Mask=20483
+Used=19
+Data1=1
+memo=Generic D Flip-Flop
+Label Offset=46,10,-31,49
+PinCnt=6
+Pin="PREB",4,-3,-14,31
+Pin="CLRB",4,9,-15,-17
+Pin="CLK",-1,3,19,7
+Pin="D",-1,0,12,7
+Pin="Q",9,0,-18,7
+Pin="QB",9,6,-25,7
+
+[compdef]
+Name=And2
+Definition=AND
+Shape=And2
+Mask=4867
+Used=49
+Data1=2
+memo=2 Input Generic AND Gate
+Label Offset=12,21,8,8
+PinCnt=3
+Pin="In0",0,0,-6,-1
+Pin="In1",0,2,-6,-1
+Pin="Out",6,1,-7,-1
+
+[compdef]
+Name=Inverter
+Definition=INV
+Shape=Inv
+Mask=4611
+Used=12
+Data1=1
+memo=Generic Inverter Gate
+Label Offset=12,-6,11,21
+PinCnt=2
+Pin="In",0,0,-4,-2
+Pin="Out",6,0,-10,-2
+
+[compdef]
+Name=Voltage Source
+Definition=VSpice
+Shape=SPICE_V
+Mask=4865
+Used=52
+memo=Voltage Source
+Label Offset=19,13,15,13
+PinCnt=2
+Pin="Plus",6,0,-5,-6
+Pin="Minus",0,0,-20,-6
+
+[compdef]
+Name=DClock
+Definition=Macro
+Shape=StimClock
+Mask=4096
+Used=2
+memo=Digital Clock Stimulus Macro
+Link=http://www.spectrum-soft.com/news/fall2003/dclock.shtm
+Label Offset=29,10,12,21
+PinCnt=1
+Pin="Out",d,9,0
+
+[compdef]
+Name=Fixed Digital
+Definition=DIGITAL STATE
+Shape=Fixed
+Mask=3840
+Used=2
+memo=Provides a fixed digital state
+Label Offset=-14,-7,-6,-27
+PinCnt=1
+Pin="Out",4,0,-8,-3
+
+[compdef]
+Name=Stim1
+Definition=STIM
+Shape=STIM1
+Mask=5123
+Used=2
+Data2=1
+memo=1-Bit Digital Stimulus
+Label Offset=-10,-6,13,20
+PinCnt=1
+Pin="Out0",9,0,-5,-3
+
+[compdef]
+Name=Or2
+Definition=OR
+Shape=Or2
+Mask=4355
+Used=13
+Data1=2
+memo=2 Input Generic OR Gate
+Label Offset=15,4,7,10
+PinCnt=3
+Pin="In0",0,0,-6,-3
+Pin="In1",0,2,-6,-2
+Pin="Out",6,1,-7,-1
+
+[compdef]
+Name=JKFF
+Definition=JKFF
+Shape=Jnpc
+Mask=20483
+Used=18
+Data1=1
+memo=Generic JK Flip-Flop
+Label Offset=55,9,-29,57
+PinCnt=7
+Pin="PREB",5,-3,-14,31
+Pin="CLRB",5,9,-16,-18
+Pin="CLKB",0,3,19,7
+Pin="J",0,0,13,7
+Pin="K",0,6,12,6
+Pin="Q",10,0,-20,7
+Pin="QB",10,6,-27,6
+
+[Circuit]
+Window Placement=2,3, -1,-1, -8,-31, 0,0,1001,383
+Default Object=Color=#000080
+Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
+Default Object Apply Border To Text=No
+Default Object Apply Fill To Text=No
+Default Object GridSnap=No
+NodeVoltageFormat=3
+CurrentFormat=3
+PowerFormat=3
+PathDelayFormat=3
+WarningFormat=3
+GridTextFormulaFormat=3
+Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 26,26,1201,412
+SpiceType=AMBIGUOUS
+Title_Block_Border=None
+Title_Block=False
+Show Nodes=False
+Show Voltages=False
+Show Current=False
+Show Power=False
+Show Condition=False
+Show Pin Connections=False
+Show Connection Warnings=False
+Show Cross=False
+Show Attribute Text=True
+Show Grid Text=True
+
+[Comp]
+Name=Battery
+Px=48,80
+Rot=3
+Page=3
+
+[Attr]
+ON=-26,-41,PART
+V=V1
+Style=8192
+
+[Attr]
+ON=-26,-27,VALUE
+V=15
+Style=8192
+
+[Comp]
+Name=Ground
+Px=48,80
+Rot=7
+Page=3
+
+[Comp]
+Name=Battery
+Px=112,80
+Rot=3
+Page=3
+
+[Attr]
+ON=-26,-41,PART
+V=V2
+Style=8192
+
+[Attr]
+ON=-31,-27,VALUE
+V=-15
+Style=8192
+
+[Comp]
+Name=Ground
+Px=112,80
+Rot=7
+Page=3
+
+[Comp]
+Name=Opamp
+Px=1992,312
+Rot=4
+
+[Attr]
+ON=44,-43,PART
+V=X2
+Style=8192
+
+[Attr]
+ON=44,-57,MODEL
+V=$GENERIC
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=1816,168
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R1
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=1928,264
+Rot=2
+
+[Attr]
+ON=-36,-26,PART
+V=R2
+Style=8192
+
+[Attr]
+ON=-35,-40,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1816,168,1856,168
+
+[Wire]
+Pxs=1736,168,1768,168
+
+[Wire]
+Pxs=1944,264,1992,264
+
+[Wire]
+Pxs=1968,312,1992,312
+
+[Wire]
+Pxs=1968,312,1968,336
+
+[Comp]
+Name=Ground
+Px=1968,336
+Rot=7
+
+[Wire]
+Pxs=1736,288,1784,288
+
+[Wire]
+Pxs=1736,288,1736,312
+
+[Comp]
+Name=Ground
+Px=1736,312
+Rot=7
+
+[Wire]
+Pxs=1736,240,1784,240
+
+[Wire]
+Pxs=1736,168,1736,240
+
+[Wire]
+Pxs=1856,168,1856,264
+
+[Wire]
+Pxs=1856,264,1880,264
+
+[Comp]
+Name=Resistor
+Px=2024,192
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R3
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2024,192,2064,192
+
+[Wire]
+Pxs=1944,192,1976,192
+
+[Wire]
+Pxs=1944,192,1944,264
+
+[Wire]
+Pxs=2064,192,2064,288
+
+[Wire]
+Pxs=1928,264,1944,264
+
+[Wire]
+Pxs=2064,288,2104,288
+
+[Comp]
+Name=Resistor
+Px=1336,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R6
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1336,240,1352,240
+
+[Wire]
+Pxs=1352,240,1352,256
+
+[Comp]
+Name=Resistor
+Px=1352,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R8
+Style=8192
+
+[Attr]
+ON=-59,-41,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1352,304,1352,320
+
+[Wire]
+Pxs=1352,368,1352,384
+
+[Wire]
+Pxs=1272,240,1288,240
+
+[Comp]
+Name=Resistor
+Px=1256,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R9
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1256,240,1272,240
+
+[Wire]
+Pxs=1272,240,1272,256
+
+[Comp]
+Name=Resistor
+Px=1272,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R10
+Style=8192
+
+[Attr]
+ON=-59,-42,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1272,304,1272,320
+
+[Wire]
+Pxs=1272,368,1272,384
+
+[Wire]
+Pxs=1192,240,1208,240
+
+[Comp]
+Name=Resistor
+Px=1176,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R11
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1176,240,1192,240
+
+[Wire]
+Pxs=1192,240,1192,256
+
+[Comp]
+Name=Resistor
+Px=1192,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R12
+Style=8192
+
+[Attr]
+ON=-57,-43,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1192,304,1192,320
+
+[Wire]
+Pxs=1192,368,1192,384
+
+[Wire]
+Pxs=1112,240,1128,240
+
+[Comp]
+Name=Resistor
+Px=1096,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R13
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1096,240,1112,240
+
+[Wire]
+Pxs=1112,240,1112,256
+
+[Comp]
+Name=Resistor
+Px=1112,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R14
+Style=8192
+
+[Attr]
+ON=-60,-43,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1112,304,1112,320
+
+[Wire]
+Pxs=1112,368,1112,384
+
+[Wire]
+Pxs=1016,240,1048,240
+
+[Wire]
+Pxs=1016,240,1016,272
+
+[Comp]
+Name=Ground
+Px=1016,272
+Rot=7
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,1240
+
+[Attr]
+ON=46,10,PART
+V=U5
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,1400
+
+[Attr]
+ON=46,10,PART
+V=U6
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2296,560,2296,576
+
+[Wire]
+Pxs=2152,560,2296,560
+
+[Wire]
+Pxs=2336,1288,2368,1288
+
+[Wire]
+Pxs=2152,1240,2256,1240
+
+[Wire]
+Pxs=2336,1448,2368,1448
+
+[Wire]
+Pxs=2296,560,2352,560
+
+[Wire]
+Pxs=2352,880,2352,1040
+
+[Wire]
+Pxs=2296,1360,2352,1360
+
+[Wire]
+Pxs=2296,1360,2296,1376
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,1560
+
+[Attr]
+ON=46,10,PART
+V=U7
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2296,1472,2296,1488
+
+[Wire]
+Pxs=2336,1608,2368,1608
+
+[Wire]
+Pxs=2352,1360,2352,1520
+
+[Wire]
+Pxs=2296,1520,2352,1520
+
+[Wire]
+Pxs=2296,1520,2296,1536
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,1720
+
+[Attr]
+ON=46,10,PART
+V=U8
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2296,1632,2296,1648
+
+[Wire]
+Pxs=2336,1768,2368,1768
+
+[Wire]
+Pxs=2352,1520,2352,1680
+
+[Wire]
+Pxs=2296,1680,2352,1680
+
+[Wire]
+Pxs=2296,1680,2296,1696
+
+[Wire]
+Pxs=2296,1792,2296,1848
+
+[Wire]
+Pxs=2152,1400,2256,1400
+
+[Wire]
+Pxs=2152,1560,2256,1560
+
+[Wire]
+Pxs=2152,1720,2256,1720
+
+[Wire]
+Pxs=1616,600,1784,600
+
+[Comp]
+Name=And2
+Px=1704,1288
+
+[Attr]
+ON=13,-22,PART
+V=U13
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,1288,1656,1288
+
+[Wire]
+Pxs=1784,1440,1800,1440
+
+[Wire]
+Pxs=1784,1600,1800,1600
+
+[Wire]
+Pxs=2032,1720,2064,1720
+
+[Wire]
+Pxs=1784,1760,1800,1760
+
+[Comp]
+Name=And2
+Px=1704,1448
+
+[Attr]
+ON=13,-22,PART
+V=U29
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,1448,1656,1448
+
+[Wire]
+Pxs=1752,1456,1800,1456
+
+[Wire]
+Pxs=1656,1560,1952,1560
+
+[Wire]
+Pxs=1656,1448,1656,1560
+
+[Wire]
+Pxs=1656,1448,1704,1448
+
+[Wire]
+Pxs=1688,1304,1704,1304
+
+[Wire]
+Pxs=1688,1464,1704,1464
+
+[Wire]
+Pxs=1656,1400,1952,1400
+
+[Wire]
+Pxs=1616,1784,1688,1784
+
+[Comp]
+Name=And2
+Px=1704,1608
+
+[Attr]
+ON=13,-22,PART
+V=U30
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,1608,1656,1608
+
+[Wire]
+Pxs=1656,1720,1952,1720
+
+[Wire]
+Pxs=1656,1608,1656,1720
+
+[Wire]
+Pxs=1656,1608,1704,1608
+
+[Wire]
+Pxs=1688,1624,1704,1624
+
+[Wire]
+Pxs=1752,1616,1800,1616
+
+[Comp]
+Name=And2
+Px=1704,1768
+
+[Attr]
+ON=13,-22,PART
+V=U31
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,1768,1704,1768
+
+[Wire]
+Pxs=1688,1784,1704,1784
+
+[Wire]
+Pxs=1752,1776,1800,1776
+
+[Comp]
+Name=Opamp
+Px=1784,288
+Rot=4
+
+[Attr]
+ON=44,-43,PART
+V=X3
+Style=8192
+
+[Attr]
+ON=44,-57,MODEL
+V=$GENERIC
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Opamp
+Px=816,952
+Rot=4
+
+[Attr]
+ON=44,-43,PART
+V=X4
+Style=8192
+
+[Attr]
+ON=44,-57,MODEL
+V=$GENERIC
+
+[Attr]
+ON=0,0,PACKAGE
+V=TO-5C_8
+
+[Wire]
+Pxs=720,904,816,904
+
+[Wire]
+Pxs=720,952,816,952
+
+[Comp]
+Name=Inverter
+Px=1112,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U32
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=1192,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U33
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=1272,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U34
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=1352,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U35
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=904,928
+
+[Attr]
+ON=15,-31,PART
+V=U36
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=888,928,904,928
+
+[Wire]
+Pxs=952,928,1056,928
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,1240
+
+[Attr]
+ON=46,10,PART
+V=U37
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,1400
+
+[Attr]
+ON=46,10,PART
+V=U38
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1456,600,1472,600
+
+[Wire]
+Pxs=1416,560,1416,576
+
+[Wire]
+Pxs=1208,560,1336,560
+
+[Wire]
+Pxs=1208,600,1376,600
+
+[Wire]
+Pxs=1416,1312,1416,1328
+
+[Wire]
+Pxs=1416,1360,1416,1376
+
+[Wire]
+Pxs=1336,1360,1416,1360
+
+[Wire]
+Pxs=1336,1040,1336,1200
+
+[Wire]
+Pxs=1312,1424,1376,1424
+
+[Wire]
+Pxs=1312,1104,1312,1264
+
+[Wire]
+Pxs=1208,624,1312,624
+
+[Wire]
+Pxs=1360,1400,1376,1400
+
+[Wire]
+Pxs=1360,1344,1360,1400
+
+[Wire]
+Pxs=1360,1344,1472,1344
+
+[Wire]
+Pxs=1472,1240,1472,1344
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,1560
+
+[Attr]
+ON=46,10,PART
+V=U39
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,1520,1416,1536
+
+[Wire]
+Pxs=1336,1520,1416,1520
+
+[Wire]
+Pxs=1336,1360,1336,1520
+
+[Wire]
+Pxs=1312,1584,1376,1584
+
+[Wire]
+Pxs=1312,1424,1312,1584
+
+[Wire]
+Pxs=1360,1560,1376,1560
+
+[Wire]
+Pxs=1360,1504,1360,1560
+
+[Wire]
+Pxs=1288,1328,1288,1488
+
+[Wire]
+Pxs=1472,1400,1472,1504
+
+[Wire]
+Pxs=1456,1400,1472,1400
+
+[Wire]
+Pxs=1472,1400,1488,1400
+
+[Wire]
+Pxs=1288,1488,1288,1648
+
+[Wire]
+Pxs=1360,1504,1472,1504
+
+[Wire]
+Pxs=1416,1472,1416,1488
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,1720
+
+[Attr]
+ON=46,10,PART
+V=U40
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,1680,1416,1696
+
+[Wire]
+Pxs=1336,1680,1416,1680
+
+[Wire]
+Pxs=1336,1520,1336,1680
+
+[Wire]
+Pxs=1312,1744,1376,1744
+
+[Wire]
+Pxs=1312,1584,1312,1744
+
+[Wire]
+Pxs=1360,1720,1376,1720
+
+[Wire]
+Pxs=1360,1664,1360,1720
+
+[Wire]
+Pxs=1208,1808,1288,1808
+
+[Wire]
+Pxs=1288,1648,1288,1808
+
+[Wire]
+Pxs=1416,1632,1416,1648
+
+[Wire]
+Pxs=1360,1664,1472,1664
+
+[Wire]
+Pxs=1472,1560,1472,1664
+
+[Wire]
+Pxs=1456,1560,1472,1560
+
+[Wire]
+Pxs=1472,1560,1488,1560
+
+[Wire]
+Pxs=1456,1720,1488,1720
+
+[Wire]
+Pxs=1288,1328,1416,1328
+
+[Wire]
+Pxs=1288,1488,1416,1488
+
+[Wire]
+Pxs=1288,1648,1416,1648
+
+[Wire]
+Pxs=1288,1808,1416,1808
+
+[Wire]
+Pxs=720,608,816,608
+
+[Wire]
+Pxs=720,656,816,656
+
+[Comp]
+Name=And2
+Px=992,560
+
+[Attr]
+ON=13,-22,PART
+V=U45
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1040,568,1056,568
+
+[Wire]
+Pxs=896,608,912,608
+
+[Wire]
+Pxs=952,576,952,608
+
+[Wire]
+Pxs=912,608,952,608
+
+[Wire]
+Pxs=720,560,992,560
+
+[Wire]
+Pxs=216,608,248,608
+
+[Wire]
+Pxs=216,704,248,704
+
+[Wire]
+Pxs=216,656,248,656
+
+[Wire]
+Pxs=216,560,248,560
+
+[Wire]
+Pxs=216,752,248,752
+
+[Comp]
+Name=Voltage Source
+Px=168,608
+
+[Attr]
+ON=-5,-22,PART
+V=V4
+Style=8192
+
+[Attr]
+ON=-136,-41,VALUE
+V=AC 0 0 Sin 1.6 1.5 500k 0 0 0
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Attr]
+ON=0,0,SMOOTHING
+V=N
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseS
+V=N
+Style=256
+
+[Attr]
+ON=0,0,FRACTION
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseF
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_Pulse
+V=DC 0 AC 1 0 Pulse 0 2 0 1n 1n 50u 100u
+Style=256
+
+[Attr]
+ON=0,0,Saved_Sin
+V=AC 0 0 Sin 1.6 1.5 500k 0 0 0
+Style=256
+
+[Attr]
+ON=0,11,Saved_None
+V=DC 0.5 AC 1 0
+Style=256
+
+[Wire]
+Pxs=136,608,168,608
+
+[Comp]
+Name=Ground
+Px=136,608
+Rot=6
+
+[Comp]
+Name=DClock
+Px=144,656
+
+[Attr]
+ON=21,-23,PART
+V=X5
+Style=8192
+
+[Attr]
+ON=29,24,FILE
+V=DClock
+
+[Attr]
+ON=29,52,Param:ZEROWIDTH
+V=50n
+
+[Attr]
+ON=29,66,Param:ONEWIDTH
+V=50n
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Fixed Digital
+Px=184,560
+Rot=4
+
+[Attr]
+ON=-19,-27,PART
+V=U46
+
+[Attr]
+ON=14,-24,VALUE
+V=1
+Style=8192
+
+[Attr]
+ON=-41,1,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-2,15,IO_LEVEL
+V=0
+
+[Attr]
+ON=-58,29,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-55,43,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Stim1
+Px=144,704
+Rot=4
+
+[Attr]
+ON=18,-26,PART
+V=U47
+Style=8192
+
+[Attr]
+ON=-10,-22,FORMAT
+V=1
+
+[Attr]
+ON=-10,-36,COMMAND
+V=+0ns 0
+V=+40ns 1
+V=+60ns 0
+
+[Attr]
+ON=-10,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-10,-64,TIMESTEP
+V=0
+
+[Attr]
+ON=-10,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-10,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-10,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Stim1
+Px=144,752
+Rot=4
+
+[Attr]
+ON=19,-25,PART
+V=U48
+Style=8192
+
+[Attr]
+ON=-10,-22,FORMAT
+V=1
+
+[Attr]
+ON=-10,-36,COMMAND
+V=+ 0ns 0
+V=+ 10ns 1
+
+[Attr]
+ON=-10,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-10,-64,TIMESTEP
+V=0
+
+[Attr]
+ON=-10,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-10,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-10,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=360,608,392,608
+
+[Wire]
+Pxs=360,704,392,704
+
+[Wire]
+Pxs=360,656,392,656
+
+[Wire]
+Pxs=360,560,392,560
+
+[Comp]
+Name=Or2
+Px=1800,1760
+
+[Attr]
+ON=9,-20,PART
+V=U69
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Or2
+Px=1800,1600
+
+[Attr]
+ON=8,-21,PART
+V=U70
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Or2
+Px=1800,1440
+
+[Attr]
+ON=8,-23,PART
+V=U71
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2232,1648,2296,1648
+
+[Wire]
+Pxs=2232,1648,2232,1848
+
+[Wire]
+Pxs=2232,1848,2296,1848
+
+[Wire]
+Pxs=2232,1488,2296,1488
+
+[Wire]
+Pxs=2232,1488,2232,1648
+
+[Wire]
+Pxs=2232,1312,2296,1312
+
+[Wire]
+Pxs=2232,1312,2232,1488
+
+[Wire]
+Pxs=2208,1744,2256,1744
+
+[Wire]
+Pxs=2208,1744,2208,1808
+
+[Wire]
+Pxs=2208,1584,2256,1584
+
+[Wire]
+Pxs=2208,1584,2208,1744
+
+[Wire]
+Pxs=2208,1424,2256,1424
+
+[Wire]
+Pxs=2208,1424,2208,1584
+
+[Wire]
+Pxs=2208,1264,2256,1264
+
+[Wire]
+Pxs=2208,1264,2208,1424
+
+[Wire]
+Pxs=2152,1848,2232,1848
+
+[Wire]
+Pxs=2152,1808,2208,1808
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=816,608
+
+[Attr]
+ON=55,9,PART
+V=U72
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=720,632,816,632
+
+[Wire]
+Pxs=720,680,856,680
+
+[Wire]
+Pxs=720,584,856,584
+
+[Wire]
+Pxs=720,752,816,752
+
+[Wire]
+Pxs=896,752,912,752
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=816,752
+
+[Attr]
+ON=55,9,PART
+V=U73
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=720,776,816,776
+
+[Wire]
+Pxs=720,824,856,824
+
+[Wire]
+Pxs=720,728,856,728
+
+[Wire]
+Pxs=800,800,800,840
+
+[Wire]
+Pxs=912,752,912,840
+
+[Wire]
+Pxs=800,800,816,800
+
+[Wire]
+Pxs=800,840,912,840
+
+[Wire]
+Pxs=952,576,992,576
+
+[Wire]
+Pxs=1688,240,1736,240
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,1720
+
+[Attr]
+ON=55,9,PART
+V=U74
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,1848,1928,1848
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,1560
+
+[Attr]
+ON=55,9,PART
+V=U75
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1784,1600,1784,1760
+
+[Wire]
+Pxs=1848,1768,1952,1768
+
+[Wire]
+Pxs=1992,1792,1992,1808
+
+[Wire]
+Pxs=1992,1632,1992,1648
+
+[Wire]
+Pxs=1928,1648,1928,1808
+
+[Wire]
+Pxs=1928,1648,1992,1648
+
+[Wire]
+Pxs=1928,1808,1992,1808
+
+[Wire]
+Pxs=1688,1464,1688,1624
+
+[Wire]
+Pxs=1848,1608,1952,1608
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,1400
+
+[Attr]
+ON=55,9,PART
+V=U76
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,1240
+
+[Attr]
+ON=55,9,PART
+V=U77
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2032,600,2064,600
+
+[Wire]
+Pxs=2032,1400,2064,1400
+
+[Wire]
+Pxs=2032,1560,2064,1560
+
+[Wire]
+Pxs=1928,1488,1992,1488
+
+[Wire]
+Pxs=1928,1320,1992,1320
+
+[Wire]
+Pxs=1688,1624,1688,1784
+
+[Wire]
+Pxs=1848,1448,1952,1448
+
+[Wire]
+Pxs=1992,1680,1992,1696
+
+[Wire]
+Pxs=1992,1680,2048,1680
+
+[Wire]
+Pxs=2048,1040,2048,1200
+
+[Wire]
+Pxs=1616,560,1992,560
+
+[Wire]
+Pxs=1992,1360,1992,1376
+
+[Wire]
+Pxs=1992,1360,2048,1360
+
+[Wire]
+Pxs=2048,1360,2048,1520
+
+[Wire]
+Pxs=1928,1488,1928,1648
+
+[Wire]
+Pxs=1928,1320,1928,1488
+
+[Wire]
+Pxs=1992,1312,1992,1320
+
+[Wire]
+Pxs=1992,1472,1992,1488
+
+[Wire]
+Pxs=1992,1520,1992,1536
+
+[Wire]
+Pxs=1992,1520,2048,1520
+
+[Wire]
+Pxs=2048,1520,2048,1680
+
+[Wire]
+Pxs=1992,560,1992,576
+
+[Wire]
+Pxs=1992,560,2048,560
+
+[Wire]
+Pxs=1616,1808,1896,1808
+
+[Wire]
+Pxs=1896,1744,1896,1808
+
+[Wire]
+Pxs=1928,1808,1928,1848
+
+[Wire]
+Pxs=1896,1744,1952,1744
+
+[Wire]
+Pxs=1896,1584,1896,1744
+
+[Wire]
+Pxs=1896,1584,1952,1584
+
+[Wire]
+Pxs=1896,1424,1896,1584
+
+[Wire]
+Pxs=1896,1424,1952,1424
+
+[Wire]
+Pxs=1896,1264,1896,1424
+
+[Wire]
+Pxs=1896,1264,1952,1264
+
+[Wire]
+Pxs=968,1064,984,1064
+
+[Wire]
+Pxs=928,1024,928,1040
+
+[Wire]
+Pxs=720,1024,848,1024
+
+[Wire]
+Pxs=720,1064,888,1064
+
+[Wire]
+Pxs=928,1136,928,1152
+
+[Wire]
+Pxs=928,1184,928,1200
+
+[Wire]
+Pxs=848,1184,928,1184
+
+[Wire]
+Pxs=848,1024,848,1184
+
+[Wire]
+Pxs=848,1024,928,1024
+
+[Wire]
+Pxs=824,1248,888,1248
+
+[Wire]
+Pxs=824,1088,824,1248
+
+[Wire]
+Pxs=720,1088,824,1088
+
+[Wire]
+Pxs=824,1088,888,1088
+
+[Wire]
+Pxs=872,1224,888,1224
+
+[Wire]
+Pxs=872,1168,872,1224
+
+[Wire]
+Pxs=872,1168,984,1168
+
+[Wire]
+Pxs=984,1064,984,1168
+
+[Wire]
+Pxs=984,1064,1000,1064
+
+[Wire]
+Pxs=800,1152,800,1312
+
+[Wire]
+Pxs=968,1224,984,1224
+
+[Wire]
+Pxs=928,1296,928,1312
+
+[Wire]
+Pxs=800,1152,928,1152
+
+[Wire]
+Pxs=800,1312,928,1312
+
+[Wire]
+Pxs=720,1312,800,1312
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=888,1064
+
+[Attr]
+ON=55,9,PART
+V=U80
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=872,1112,872,1168
+
+[Wire]
+Pxs=872,1112,888,1112
+
+[Wire]
+Pxs=840,1384,872,1384
+
+[Wire]
+Pxs=720,1376,792,1376
+
+[Wire]
+Pxs=720,1392,792,1392
+
+[Wire]
+Pxs=840,1448,872,1448
+
+[Comp]
+Name=Or2
+Px=792,1440
+
+[Attr]
+ON=9,-20,PART
+V=U82
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=720,1440,792,1440
+
+[Wire]
+Pxs=720,1456,792,1456
+
+[Comp]
+Name=Inverter
+Px=1000,1064
+
+[Attr]
+ON=15,-31,PART
+V=U83
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1048,1064,1064,1064
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=888,1224
+
+[Attr]
+ON=55,9,PART
+V=U84
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=872,1272,888,1272
+
+[Wire]
+Pxs=872,1272,872,1328
+
+[Wire]
+Pxs=872,1328,984,1328
+
+[Wire]
+Pxs=984,1224,984,1328
+
+[Wire]
+Pxs=984,1224,1000,1224
+
+[Comp]
+Name=And2
+Px=792,1376
+
+[Attr]
+ON=13,-22,PART
+V=U85
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1352,240,1368,240
+
+[Comp]
+Name=Resistor
+Px=1416,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R15
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,240,1432,240
+
+[Wire]
+Pxs=1432,240,1432,256
+
+[Comp]
+Name=Resistor
+Px=1432,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R16
+Style=8192
+
+[Attr]
+ON=-59,-41,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1432,304,1432,320
+
+[Wire]
+Pxs=1432,368,1432,384
+
+[Wire]
+Pxs=1512,240,1528,240
+
+[Comp]
+Name=Resistor
+Px=1496,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R17
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1496,240,1512,240
+
+[Wire]
+Pxs=1512,240,1512,256
+
+[Comp]
+Name=Resistor
+Px=1512,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R18
+Style=8192
+
+[Attr]
+ON=-59,-42,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1512,304,1512,320
+
+[Wire]
+Pxs=1512,368,1512,384
+
+[Wire]
+Pxs=1592,240,1608,240
+
+[Comp]
+Name=Resistor
+Px=1576,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R19
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1576,240,1592,240
+
+[Wire]
+Pxs=1592,240,1592,256
+
+[Comp]
+Name=Resistor
+Px=1592,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R20
+Style=8192
+
+[Attr]
+ON=-57,-43,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1592,304,1592,320
+
+[Wire]
+Pxs=1592,368,1592,384
+
+[Wire]
+Pxs=1672,240,1688,240
+
+[Comp]
+Name=Resistor
+Px=1656,240
+Rot=2
+
+[Attr]
+ON=-24,-25,PART
+V=R21
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V={RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1656,240,1672,240
+
+[Wire]
+Pxs=1672,240,1672,256
+
+[Comp]
+Name=Resistor
+Px=1672,304
+Rot=3
+
+[Attr]
+ON=-24,-25,PART
+V=R22
+Style=8192
+
+[Attr]
+ON=-60,-43,RESISTANCE
+V={2*RES}
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1672,304,1672,320
+
+[Wire]
+Pxs=1672,368,1672,384
+
+[Comp]
+Name=Inverter
+Px=1672,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U86
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=1592,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U87
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=1512,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U88
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Inverter
+Px=1432,368
+Rot=3
+
+[Attr]
+ON=15,-31,PART
+V=U89
+Style=8192
+
+[Attr]
+ON=-68,-22,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-59,-36,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-20,-50,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-20,-64,IO_LEVEL
+V=0
+
+[Attr]
+ON=-76,-78,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-73,-92,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1432,240,1448,240
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,600
+
+[Attr]
+ON=46,10,PART
+V=U90
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,760
+
+[Attr]
+ON=46,10,PART
+V=U91
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2336,648,2368,648
+
+[Wire]
+Pxs=2152,600,2256,600
+
+[Wire]
+Pxs=2336,808,2368,808
+
+[Wire]
+Pxs=2352,560,2352,720
+
+[Wire]
+Pxs=2296,720,2352,720
+
+[Wire]
+Pxs=2296,720,2296,736
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,920
+
+[Attr]
+ON=46,10,PART
+V=U92
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2296,832,2296,848
+
+[Wire]
+Pxs=2336,968,2368,968
+
+[Wire]
+Pxs=2352,720,2352,880
+
+[Wire]
+Pxs=2296,880,2352,880
+
+[Wire]
+Pxs=2296,880,2296,896
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=2264,1080
+
+[Attr]
+ON=46,10,PART
+V=U93
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2296,992,2296,1008
+
+[Wire]
+Pxs=2336,1128,2368,1128
+
+[Wire]
+Pxs=2296,1040,2352,1040
+
+[Wire]
+Pxs=2296,1040,2296,1056
+
+[Wire]
+Pxs=2296,1152,2296,1168
+
+[Wire]
+Pxs=2152,760,2256,760
+
+[Wire]
+Pxs=2152,920,2256,920
+
+[Wire]
+Pxs=2152,1080,2256,1080
+
+[Wire]
+Pxs=2232,1008,2296,1008
+
+[Wire]
+Pxs=2232,1008,2232,1168
+
+[Wire]
+Pxs=2232,1168,2296,1168
+
+[Wire]
+Pxs=2232,848,2296,848
+
+[Wire]
+Pxs=2232,848,2232,1008
+
+[Wire]
+Pxs=2232,672,2296,672
+
+[Wire]
+Pxs=2232,672,2232,848
+
+[Wire]
+Pxs=2208,1104,2256,1104
+
+[Wire]
+Pxs=2208,1104,2208,1264
+
+[Wire]
+Pxs=2208,944,2256,944
+
+[Wire]
+Pxs=2208,944,2208,1104
+
+[Wire]
+Pxs=2208,784,2256,784
+
+[Wire]
+Pxs=2208,784,2208,944
+
+[Wire]
+Pxs=2208,624,2256,624
+
+[Wire]
+Pxs=2208,624,2208,784
+
+[Wire]
+Pxs=2296,1200,2352,1200
+
+[Wire]
+Pxs=2296,1200,2296,1216
+
+[Wire]
+Pxs=2352,1200,2352,1360
+
+[Wire]
+Pxs=2352,1040,2352,1200
+
+[Wire]
+Pxs=2232,1168,2232,1312
+
+[Comp]
+Name=And2
+Px=1704,640
+
+[Attr]
+ON=13,-22,PART
+V=U94
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1752,648,1952,648
+
+[Wire]
+Pxs=1656,640,1704,640
+
+[Wire]
+Pxs=1784,800,1800,800
+
+[Wire]
+Pxs=1784,960,1800,960
+
+[Wire]
+Pxs=2032,1080,2064,1080
+
+[Wire]
+Pxs=1784,1120,1800,1120
+
+[Wire]
+Pxs=1656,640,1656,760
+
+[Wire]
+Pxs=1616,640,1656,640
+
+[Comp]
+Name=And2
+Px=1704,808
+
+[Attr]
+ON=13,-22,PART
+V=U95
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,808,1656,808
+
+[Wire]
+Pxs=1752,816,1800,816
+
+[Wire]
+Pxs=1656,920,1952,920
+
+[Wire]
+Pxs=1656,808,1656,920
+
+[Wire]
+Pxs=1656,808,1704,808
+
+[Wire]
+Pxs=1688,656,1704,656
+
+[Wire]
+Pxs=1688,824,1704,824
+
+[Wire]
+Pxs=1656,760,1952,760
+
+[Comp]
+Name=And2
+Px=1704,968
+
+[Attr]
+ON=13,-22,PART
+V=U96
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,968,1656,968
+
+[Wire]
+Pxs=1656,1080,1952,1080
+
+[Wire]
+Pxs=1656,968,1656,1080
+
+[Wire]
+Pxs=1656,968,1704,968
+
+[Wire]
+Pxs=1688,984,1704,984
+
+[Wire]
+Pxs=1752,976,1800,976
+
+[Comp]
+Name=And2
+Px=1704,1128
+
+[Attr]
+ON=13,-22,PART
+V=U97
+Style=8192
+
+[Attr]
+ON=-64,-36,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=-55,-50,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=-16,-64,MNTYMXDLY
+V=0
+
+[Attr]
+ON=-16,-78,IO_LEVEL
+V=0
+
+[Attr]
+ON=-72,-92,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=-69,-106,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1616,1128,1656,1128
+
+[Wire]
+Pxs=1688,1144,1704,1144
+
+[Wire]
+Pxs=1752,1136,1800,1136
+
+[Comp]
+Name=Or2
+Px=1800,1120
+
+[Attr]
+ON=9,-20,PART
+V=U98
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Or2
+Px=1800,960
+
+[Attr]
+ON=8,-21,PART
+V=U99
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Or2
+Px=1800,800
+
+[Attr]
+ON=8,-23,PART
+V=U100
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,1080
+
+[Attr]
+ON=55,9,PART
+V=U101
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,920
+
+[Attr]
+ON=55,9,PART
+V=U102
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1784,960,1784,1120
+
+[Wire]
+Pxs=1848,1128,1952,1128
+
+[Wire]
+Pxs=1992,1152,1992,1168
+
+[Wire]
+Pxs=1992,992,1992,1008
+
+[Wire]
+Pxs=1928,1008,1928,1168
+
+[Wire]
+Pxs=1928,1008,1992,1008
+
+[Wire]
+Pxs=1928,1168,1992,1168
+
+[Wire]
+Pxs=1688,824,1688,984
+
+[Wire]
+Pxs=1848,968,1952,968
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,760
+
+[Attr]
+ON=55,9,PART
+V=U103
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=JKFF
+Style=ShowPinText
+Px=1952,600
+
+[Attr]
+ON=55,9,PART
+V=U104
+Style=8192
+
+[Attr]
+ON=55,23,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=55,37,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=55,51,MNTYMXDLY
+V=0
+
+[Attr]
+ON=55,65,IO_LEVEL
+V=0
+
+[Attr]
+ON=55,79,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=55,93,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=2032,760,2056,760
+
+[Wire]
+Pxs=2032,920,2064,920
+
+[Wire]
+Pxs=1928,848,1992,848
+
+[Wire]
+Pxs=1928,680,1992,680
+
+[Wire]
+Pxs=1688,984,1688,1144
+
+[Wire]
+Pxs=1848,808,1952,808
+
+[Wire]
+Pxs=1784,600,1784,800
+
+[Wire]
+Pxs=1688,656,1688,824
+
+[Wire]
+Pxs=1992,1040,1992,1056
+
+[Wire]
+Pxs=1992,1040,2048,1040
+
+[Wire]
+Pxs=2048,560,2048,720
+
+[Wire]
+Pxs=1992,720,1992,736
+
+[Wire]
+Pxs=1992,720,2048,720
+
+[Wire]
+Pxs=2048,720,2048,880
+
+[Wire]
+Pxs=1928,848,1928,1008
+
+[Wire]
+Pxs=1928,680,1928,848
+
+[Wire]
+Pxs=1992,672,1992,680
+
+[Wire]
+Pxs=1992,832,1992,848
+
+[Wire]
+Pxs=1992,880,1992,896
+
+[Wire]
+Pxs=1992,880,2048,880
+
+[Wire]
+Pxs=2048,880,2048,1040
+
+[Wire]
+Pxs=1896,1104,1896,1264
+
+[Wire]
+Pxs=1928,1168,1928,1320
+
+[Wire]
+Pxs=1896,1104,1952,1104
+
+[Wire]
+Pxs=1896,944,1896,1104
+
+[Wire]
+Pxs=1896,944,1952,944
+
+[Wire]
+Pxs=1896,784,1896,944
+
+[Wire]
+Pxs=1896,784,1952,784
+
+[Wire]
+Pxs=1896,624,1896,784
+
+[Wire]
+Pxs=1896,624,1952,624
+
+[Wire]
+Pxs=1784,600,1952,600
+
+[Wire]
+Pxs=2032,1240,2064,1240
+
+[Wire]
+Pxs=1992,1200,1992,1216
+
+[Wire]
+Pxs=1992,1200,2048,1200
+
+[Wire]
+Pxs=2048,1200,2048,1360
+
+[Wire]
+Pxs=1656,1128,1656,1240
+
+[Wire]
+Pxs=1656,1240,1952,1240
+
+[Wire]
+Pxs=1656,1128,1704,1128
+
+[Comp]
+Name=Or2
+Px=1800,1280
+
+[Attr]
+ON=8,-23,PART
+V=U105
+Style=8192
+
+[Attr]
+ON=15,18,TIMING MODEL
+V=D0_GATE
+
+[Attr]
+ON=15,32,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=15,46,MNTYMXDLY
+V=0
+
+[Attr]
+ON=15,60,IO_LEVEL
+V=0
+
+[Attr]
+ON=15,74,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=15,88,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1848,1288,1952,1288
+
+[Wire]
+Pxs=1784,1280,1784,1440
+
+[Wire]
+Pxs=1784,1280,1800,1280
+
+[Wire]
+Pxs=1752,1296,1800,1296
+
+[Wire]
+Pxs=1688,1304,1688,1464
+
+[Wire]
+Pxs=1656,1288,1656,1400
+
+[Wire]
+Pxs=1688,1144,1688,1304
+
+[Wire]
+Pxs=1656,1288,1704,1288
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,600
+
+[Attr]
+ON=46,10,PART
+V=U106
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,760
+
+[Attr]
+ON=46,10,PART
+V=U107
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,672,1416,688
+
+[Wire]
+Pxs=1416,720,1416,736
+
+[Wire]
+Pxs=1336,720,1416,720
+
+[Wire]
+Pxs=1336,560,1336,720
+
+[Wire]
+Pxs=1312,784,1376,784
+
+[Wire]
+Pxs=1312,624,1312,784
+
+[Wire]
+Pxs=1360,760,1376,760
+
+[Wire]
+Pxs=1360,704,1360,760
+
+[Wire]
+Pxs=1360,704,1472,704
+
+[Wire]
+Pxs=1472,600,1472,704
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,920
+
+[Attr]
+ON=46,10,PART
+V=U108
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,880,1416,896
+
+[Wire]
+Pxs=1336,880,1416,880
+
+[Wire]
+Pxs=1336,720,1336,880
+
+[Wire]
+Pxs=1312,944,1376,944
+
+[Wire]
+Pxs=1312,784,1312,944
+
+[Wire]
+Pxs=1360,920,1376,920
+
+[Wire]
+Pxs=1360,864,1360,920
+
+[Wire]
+Pxs=1288,688,1288,848
+
+[Wire]
+Pxs=1472,760,1472,864
+
+[Wire]
+Pxs=1456,760,1472,760
+
+[Wire]
+Pxs=1472,760,1488,760
+
+[Wire]
+Pxs=1288,848,1288,1008
+
+[Wire]
+Pxs=1360,864,1472,864
+
+[Wire]
+Pxs=1416,832,1416,848
+
+[Comp]
+Name=DFF
+Style=ShowPinText
+Px=1384,1080
+
+[Attr]
+ON=46,10,PART
+V=U109
+Style=8192
+
+[Attr]
+ON=46,24,TIMING MODEL
+V=D0_EFF
+
+[Attr]
+ON=46,38,I/O MODEL
+V=IO_STD
+
+[Attr]
+ON=46,52,MNTYMXDLY
+V=0
+
+[Attr]
+ON=46,66,IO_LEVEL
+V=0
+
+[Attr]
+ON=46,80,POWER NODE
+V=$G_DPWR
+
+[Attr]
+ON=46,94,GROUND NODE
+V=$G_DGND
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1416,1040,1416,1056
+
+[Wire]
+Pxs=1336,1040,1416,1040
+
+[Wire]
+Pxs=1336,880,1336,1040
+
+[Wire]
+Pxs=1312,1104,1376,1104
+
+[Wire]
+Pxs=1312,944,1312,1104
+
+[Wire]
+Pxs=1360,1080,1376,1080
+
+[Wire]
+Pxs=1360,1024,1360,1080
+
+[Wire]
+Pxs=1288,1008,1288,1168
+
+[Wire]
+Pxs=1416,992,1416,1008
+
+[Wire]
+Pxs=1360,1024,1472,1024
+
+[Wire]
+Pxs=1472,920,1472,1024
+
+[Wire]
+Pxs=1456,920,1472,920
+
+[Wire]
+Pxs=1472,920,1488,920
+
+[Wire]
+Pxs=1456,1080,1472,1080
+
+[Wire]
+Pxs=1288,688,1416,688
+
+[Wire]
+Pxs=1288,848,1416,848
+
+[Wire]
+Pxs=1288,1008,1416,1008
+
+[Wire]
+Pxs=1288,1168,1416,1168
+
+[Wire]
+Pxs=1336,560,1416,560
+
+[Wire]
+Pxs=1312,624,1376,624
+
+[Wire]
+Pxs=1472,600,1488,600
+
+[Wire]
+Pxs=1360,1184,1360,1240
+
+[Wire]
+Pxs=1360,1184,1472,1184
+
+[Wire]
+Pxs=1472,1080,1472,1184
+
+[Wire]
+Pxs=1360,1240,1376,1240
+
+[Wire]
+Pxs=1472,1080,1488,1080
+
+[Wire]
+Pxs=1456,1240,1472,1240
+
+[Wire]
+Pxs=1472,1240,1488,1240
+
+[Wire]
+Pxs=1416,1792,1416,1808
+
+[Wire]
+Pxs=1416,1200,1416,1216
+
+[Wire]
+Pxs=1336,1200,1416,1200
+
+[Wire]
+Pxs=1336,1200,1336,1360
+
+[Wire]
+Pxs=1288,1168,1288,1328
+
+[Wire]
+Pxs=1416,1152,1416,1168
+
+[Wire]
+Pxs=1784,1440,1784,1600
+
+[Wire]
+Pxs=1784,1120,1784,1280
+
+[Wire]
+Pxs=1784,800,1784,960
+
+[Wire]
+Pxs=1312,1264,1376,1264
+
+[Wire]
+Pxs=1312,1264,1312,1424
+
+[Grid Text]
+Text="co"
+Px=1688,240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="EN"
+Px=912,608
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="U_COMP"
+Px=888,928
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text=".PARAM RES = 4000"
+Px=1400,144
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CLK"
+Px=720,560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wRESET"
+Px=1208,1808
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wCLK"
+Px=1208,624
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wSTART2"
+Px=1208,600
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=1208,560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ7"
+Px=1488,600
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=2152,560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ANALOG"
+Px=720,904
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="COMP"
+Px=1056,928
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="COMP"
+Px=1616,1784
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wSTART1"
+Px=1616,600
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q0"
+Px=2064,1720
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q1"
+Px=2064,1560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q2"
+Px=2064,1400
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q7"
+Px=2064,600
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q0"
+Px=2152,1720
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q1"
+Px=2152,1560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q2"
+Px=2152,1400
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q3"
+Px=2152,1240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="U_DAC"
+Px=2104,288
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q3"
+Px=1352,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q2"
+Px=1272,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q1"
+Px=1192,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q0"
+Px=1112,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VC"
+Px=48,32
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Page=3
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=112,32
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Page=3
+CBorder=None
+
+[Grid Text]
+Text="VC"
+Px=2024,320
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=2024,256
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VC"
+Px=1816,296
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=1816,232
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VC"
+Px=848,960
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=848,896
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="U_DAC"
+Px=720,952
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ0"
+Px=1488,1720
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ1"
+Px=1488,1560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ2"
+Px=1488,1400
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ0"
+Px=1616,1768
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ1"
+Px=1616,1608
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ2"
+Px=1616,1448
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ3"
+Px=1616,1288
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ0"
+Px=2152,1808
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CLK"
+Px=720,632
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wCLK"
+Px=1056,568
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ0"
+Px=720,656
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wSTART1"
+Px=720,608
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CLK"
+Px=248,656
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ANALOG"
+Px=248,608
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="START"
+Px=248,704
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=248,560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q3"
+Px=392,560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q2"
+Px=392,608
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q1"
+Px=392,656
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q0"
+Px=392,704
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="RESET"
+Px=248,752
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q0"
+Px=2368,1768
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q1"
+Px=2368,1608
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q2"
+Px=2368,1448
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q3"
+Px=2368,1288
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wRESET"
+Px=2152,1848
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="RESET"
+Px=720,680
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=720,584
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CLK"
+Px=720,776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wSTART1"
+Px=720,752
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wRESET"
+Px=720,824
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=720,728
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wSTART2"
+Px=912,752
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wRESET"
+Px=1616,1848
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=1616,560
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CLK"
+Px=1616,1808
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CLK"
+Px=720,1088
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ0"
+Px=720,1064
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VDD"
+Px=720,1024
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="RESET_F"
+Px=1064,1064
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="START_F"
+Px=1000,1224
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="RESET"
+Px=720,1312
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wRESET"
+Px=872,1384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="RESET"
+Px=720,1376
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="RESET_F"
+Px=720,1392
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wSTART1"
+Px=872,1448
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="START"
+Px=720,1440
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="START_F"
+Px=720,1456
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q4"
+Px=1432,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q5"
+Px=1512,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q6"
+Px=1592,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q7"
+Px=1672,384
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q4"
+Px=2152,1080
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q5"
+Px=2152,920
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q6"
+Px=2152,760
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q7"
+Px=2152,600
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q4"
+Px=2368,1128
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q5"
+Px=2368,968
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q6"
+Px=2368,808
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="ADC_Q7"
+Px=2368,648
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q4"
+Px=2064,1080
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q5"
+Px=2064,920
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q6"
+Px=2056,760
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ4"
+Px=1616,1128
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ5"
+Px=1616,968
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ6"
+Px=1616,808
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ7"
+Px=1616,640
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Q3"
+Px=2064,1240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ4"
+Px=1488,1080
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ5"
+Px=1488,920
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ6"
+Px=1488,760
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="wQ3"
+Px=1488,1240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Schematic]
+CurrentSection 0=0
+CurrentSection 1=0
+CurrentSection 2=0
+CurrentSection 3=0
+Splitter.xs=0
+Splitter.ys=0
+TextQuad=4099
+Scale=1.3333333333333333
+GridUser=10
+ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
+CalcRMS=False
+CalcAVG=False
+CalcPeak=False
+CalcVoltage=True
+DisplayMeasure=Last
+ShareScales=True
+
+[Tools]
+Pos=Top
+FILESAVEASOLD=No
+BOM=No
+FILEPCB=No
+PROBE=Yes
+SELECT=Yes
+PAN=Yes
+COMP=Yes
+TEXT=Yes
+WIRE=Yes
+WIRED=Yes
+BUS=Yes
+GRAPHIC=Yes
+FLOWCHART=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+TRIANGLE=No
+STAR=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+META=No
+PARALLELOGRAM=No
+FC_PROCESS=No
+FC_ALT_PROCESS=No
+FC_DECISION=No
+FC_DATA=No
+FC_PREDEFPROCESS=No
+FC_INTERNALSTORAGE=No
+FC_DOCUMENT=No
+FC_MULTIDOCUMENT=No
+FC_TERMINATOR=No
+FC_PREPARATION=No
+FC_MANUALINPUT=No
+FC_MANUALOPERATION=No
+FC_CONNECTOR=No
+FC_OFFPAGECONNECTOR=No
+FC_PUNCHCARD=No
+FC_PUNCHEDTAPE=No
+FC_SUMMING_JUNCTION=No
+FC_OR=No
+FC_COLLATE=No
+FC_SORT=No
+FC_EXTRACT=No
+FC_MERGE=No
+FC_STORED_DATA=No
+FC_DELAY=No
+FC_SAS=No
+FC_MAGNETIC_DISK=No
+FC_DAS=No
+FC_DISPLAY=No
+SPREAD_SHEET=Yes
+POLYCLOS=No
+POLYOPEN=No
+FLAG=Yes
+INFO=Yes
+HELP=Yes
+HELP_SPICE=No
+LINK=Yes
+CHECK=Yes
+REGION_ENABLE=Yes
+TITLE_BLOCK=Yes
+DIGTRC=No
+DIGTRC2=No
+BUILD_COMMAND=Yes
+DIGALL=No
+GRIDTEXT=Yes
+COMPTEXT=Yes
+NODE=Yes
+MEASURED=Yes
+NODEV=Yes
+CURRENT=Yes
+POWER=Yes
+CONDITIN=Yes
+PIN=Yes
+CONNWARN=Yes
+CROSS=No
+GRID=Yes
+BORDER=Yes
+BORDERONE=Yes
+TITLE=Yes
+RUBBER=Yes
+PROPERTY=Yes
+STEP=Yes
+MIRROR=Yes
+ROTATE=Yes
+FLIPY=Yes
+FLIPX=Yes
+CIR_MAKEMACRO=No
+CLEARCUTWIRE=No
+CLIPBOARDCIRPAGE2BMM=No
+FINDCOMP=Yes
+FIND=Yes
+REPEAT=No
+REPLACE=No
+MODEL=Yes
+CIR2CKT=No
+ATTDISP=No
+ENABLE=Yes
+DISABLE=Yes
+ENABLE_WITH=Yes
+TOFRONT=Yes
+TOBACK=Yes
+SELNEXT=No
+PAGEADD=No
+PAGEADDTEXT=No
+ADDSECTION=No
+PAGEDEL=No
+ZOOMIN=Yes
+ZOOMOUT=Yes
+AUTOSCALECIR=Yes
+GOTOFLAG=No
+UPLEVEL=Yes
+COLOR=Yes
+FONT=Yes
+STYLE=Yes
+DM_LAST=No
+DM_RMS=No
+DM_AVG=No
+DM_PEAK=No
+GRID_NONE=No
+GRID_NORMAL=No
+GRID_BOLD_5=No
+GRID_BOLD_6=No
+GRID_BOLD_USER=No
+GRAPH_PAPER=No
+SPLITCIRTEXTH=No
+SPLITCIRTEXTV=No
+SPACE_SPLITTERS_EVENLY=No
+NORMALCIR=No
+RENAMEDEFINE=No
+RENAMECMP=No
+ATTALIGN=No
+RESETNODEPOS=No
+FIT2STANDARD=No
+NODESNAP=No
+MOVETEXT=No
+TEXTINC=No
+TOGGLETEXT=No
+TOGGLEMODE=No
+TOLERANCE=No
+ALIGNAB=No
+ALIGNLEFT=No
+ALIGNCENTER=No
+ALIGNRIGHT=No
+ALIGNTOP=No
+ALIGNMIDDLES=No
+ALIGNBOTTOM=No
+
+[Section]
+Index=0
+Name="circuit1"
+Type=Main
+Enable=True
+CurrentPage 0=0
+CurrentPage 1=0
+CurrentPage 2=0
+CurrentPage 3=0
+TabSize 0=425
+TabSize 1=425
+TabSize 2=425
+TabSize 3=425
+
+[Page]
+Index=0
+Section=0
+Print=True
+Enable=True
+Name=Main
+PrinterScale=1
+Scale 0=1
+Scale 1=1
+Scale 2=1
+SB 3=445,167
+Scale 3=1.3333333333333333
+Px=1096,475
+WinBackGround Color=#FFFFFF
+Select Color=#FF0000
+Anchor Color=#000000
+Select Box Color=#000080
+Grid Text Color=Height=-12,FStyle=0,Color=#0000FF,Name=Verdana
+Grid Text RTF=False
+Grid Text Angle=0
+Grid Text GridSnap=True
+Grid Text PinIt=False
+Grid Text JustifyH=Left
+Grid Text JustifyV=Bottom
+Grid GradientColor2=None
+Grid OutlineThickness=1
+Grid OutlineColor=None
+Component Color=#0000FF
+Attribute Text=Height=-12,FStyle=0,Color=#008000,Name=Verdana
+Wire Color=#008000
+Bus Color=#008000
+Pin Connection=Height=-10,FStyle=0,Color=#FF0000,Name=Arial
+Pin Marker Color=#008000
+Node Number=Height=-11,FStyle=0,Color=#FF00FF,Name=Arial
+Node Voltage Color=Height=-11,FStyle=0,Color=#000000,Name=Arial
+Dynamic AC Voltage Color=#E4E4E4
+Text Banner Text=Height=-15,FStyle=0,Color=#800000,Name=Arial
+Title Block Background=#C0C0C0
+Current=Height=-11,FStyle=0,Color=#0000FF,Name=Arial
+Power/Condition=Height=-11,FStyle=0,Color=#FF0000,Name=Arial
+Digital Path Color=#FF0000
+Title Block Border=#000000
+Disabled	Color=#C0C0C0
+Search Color=#FFFF00
+Grid Color=#000000
+Graph Paper=#E4E4E4
+Digital 0 Color=#000000
+Digital R Color=#FFFF00
+Digital F Color=#FFFF00
+Digital 1 Color=#FF0000
+Digital X Color=#C0C0C0
+Digital Z Color=#808080
+Block Select Color=#51F998
+
+[Page]
+Index=1
+Section=0
+Type=Text
+Print=False
+Enable=True
+Name=Text
+Font=Height=-17,FStyle=0,Color=#000000,Name=Courier New
+Comment Color=#008000
+WinBackGround Color=#FFFFFF
+Disabled	Color=#C0C0C0
+KeyWord Color=#0000FF
+Error	Color=#FF0000
+Search Color=#FFFF00
+
+[Page]
+Index=2
+Section=0
+Type=Text
+Print=False
+Enable=True
+Name=Models
+SB 0=23,5
+Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
+Comment Color=#008000
+WinBackGround Color=#FFFFFF
+Disabled	Color=#C0C0C0
+KeyWord Color=#0000FF
+Error	Color=#FF0000
+Search Color=#FFFF00
+
+[Page]
+Index=3
+Section=0
+Print=True
+Enable=True
+Name=Power Supplies
+PrinterScale=1
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Px=0,0
+WinBackGround Color=#FFFFFF
+Select Color=#FF0000
+Anchor Color=#000000
+Select Box Color=#000080
+Grid Text Color=Height=-12,FStyle=0,Color=#0000FF,Name=Verdana
+Grid Text RTF=False
+Grid Text Angle=0
+Grid Text GridSnap=True
+Grid Text PinIt=False
+Grid Text JustifyH=Left
+Grid Text JustifyV=Bottom
+Grid GradientColor2=None
+Grid OutlineThickness=1
+Grid OutlineColor=None
+Component Color=#0000FF
+Attribute Text=Height=-12,FStyle=0,Color=#008000,Name=Verdana
+Wire Color=#008000
+Bus Color=#008000
+Pin Connection=Height=-10,FStyle=0,Color=#FF0000,Name=Arial
+Pin Marker Color=#008000
+Node Number=Height=-11,FStyle=0,Color=#FF00FF,Name=Arial
+Node Voltage Color=Height=-11,FStyle=0,Color=#000000,Name=Arial
+Dynamic AC Voltage Color=#E4E4E4
+Text Banner Text=Height=-15,FStyle=0,Color=#800000,Name=Arial
+Title Block Background=#C0C0C0
+Current=Height=-11,FStyle=0,Color=#0000FF,Name=Arial
+Power/Condition=Height=-11,FStyle=0,Color=#FF0000,Name=Arial
+Digital Path Color=#FF0000
+Title Block Border=#000000
+Disabled	Color=#C0C0C0
+Search Color=#FFFF00
+Grid Color=#000000
+Graph Paper=#E4E4E4
+Digital 0 Color=#000000
+Digital R Color=#FFFF00
+Digital F Color=#FFFF00
+Digital 1 Color=#FF0000
+Digital X Color=#C0C0C0
+Digital Z Color=#808080
+Block Select Color=#51F998
+
+[Page]
+Index=4
+Section=0
+Type=Info
+Print=False
+Enable=True
+Name=Info
+Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
+Comment Color=#008000
+WinBackGround Color=#FFFFFF
+Disabled	Color=#C0C0C0
+KeyWord Color=#0000FF
+Error	Color=#FF0000
+Search Color=#FFFF00
+
+[Text Area]
+Section=0
+Page=1
+Text=.OPTIONS ITL4=50
+
+[Text Area]
+Section=0
+Page=2
+Text=*** From file D:\mc12cd\library\UTILITY.LBR
+Text=*** Generic Opamp Model
+Text=.MODEL $GENERIC OPA (GBW=19MEG IBIAS=30p IOFF=3p ROUTAC=50 ROUTDC=75 SRN=20MEG
+Text=+ SRP=20MEG VOFF=2m)
+Text=*** From file D:\mc12cd\library\DIGIO.LIB
+Text=.MODEL D0_GATE UGATE ()
+Text=*** From file D:\mc12cd\library\ANALOG.LIB
+Text=.MODEL D_00 UGATE (TPHLMX=15NS TPHLTY=7NS TPLHMX=22NS TPLHTY=11NS)
+Text=*** From file D:\mc12cd\library\ON_SEMI.LIB
+Text=.MODEL D_ABC UGATE (TPHLMN=0.15NS TPHLMX=0.5NS TPHLTY=0.3NS TPLHMN=0.15NS
+Text=+ TPLHMX=0.5NS TPLHTY=0.3NS)
+Text=*** From file D:\mc12cd\library\DIGIO.LIB
+Text=.MODEL DLY_TTL UGATE (TPHLMX=15NS TPHLTY=8NS TPLHMX=22NS TPLHTY=11NS)
+Text=*** From file D:\mc12cd\library\DIGIO.LIB
+Text=.MODEL D0_EFF UEFF ()
+Text=*** From file D:\mc12cd\library\DIGIO.LIB
+Text=.MODEL DLY_EFF UEFF (THDCLKMN=5NS TPCLKQHLMX=40NS TPCLKQHLTY=25NS
+Text=+ TPCLKQLHMX=25NS TPCLKQLHTY=16NS TPPCQHLMX=40NS TPPCQHLTY=25NS TPPCQLHMX=25NS
+Text=+ TPPCQLHTY=16NS TSUDCLKMN=15NS TSUPCCLKHMN=10NS TWCLKHMN=25NS TWCLKLMN=25NS
+Text=+ TWPCLMN=25NS)
+Text=*** From file D:\mc12cd\library\ANALOG.LIB
+Text=.MODEL T_JKFF UEFF (TPCLKQHLMN=2NS TPCLKQHLMX=2NS TPCLKQHLTY=2NS TPCLKQLHMN=2NS
+Text=+ TPCLKQLHMX=2NS TPCLKQLHTY=2NS)
+Text=*** From file D:\mc12cd\library\NSOPAMP.LBR
+Text=*** Wide bandwidth quad JFET i/p opamp
+Text=.MODEL LF147 OPA (LEVEL=3 A=100K C=10p GBW=4MEG IBIAS=50p IOFF=25p ROUTAC=50
+Text=+ ROUTDC=75 SRN=17.5MEG SRP=13MEG TYPE=3 VNS=-12.9 VPS=12.9)
+Text=*** From file D:\mc12cd\library\LTOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL LF155 OPA (LEVEL=3 GBW=2.5MEG IBIAS=30p IOFF=3p ROUTAC=50 ROUTDC=75
+Text=+ SRN=7MEG SRP=7MEG TYPE=3 VNS=-12.4 VOFF=2m VPS=12.4)
+Text=*** From file D:\mc12cd\library\LTOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL LF156 OPA (LEVEL=3 GBW=5MEG IBIAS=30p IOFF=3p ROUTAC=50 ROUTDC=75
+Text=+ SRN=12MEG SRP=12MEG TYPE=3 VNS=-12.4 VOFF=2m VPS=12.4)
+Text=*** From file D:\mc12cd\library\LTOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL LF156A OPA (LEVEL=3 GBW=5MEG IBIAS=30p IOFF=3p ROUTAC=50 ROUTDC=75
+Text=+ SRN=12MEG SRP=12MEG TYPE=3 VNS=-12.4 VPS=12.4)
+Text=*** From file D:\mc12cd\library\LTOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL LF155A OPA (LEVEL=3 GBW=2.5MEG IBIAS=30p IOFF=3p ROUTAC=50 ROUTDC=75
+Text=+ SRN=7MEG SRP=7MEG TYPE=3 VNS=-12.4 VPS=12.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA748M OPA (LEVEL=3 CMRR=31.6228K IBIAS=80n IOFF=20n IOSC=25m PD=50m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA748C OPA (LEVEL=3 CMRR=31.6228K IBIAS=80n IOFF=20n IOSC=25m PD=50m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA747M OPA (LEVEL=3 CMRR=31.6228K IBIAS=80n IOFF=20n IOSC=25m PD=50m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA747C OPA (LEVEL=3 CMRR=31.6228K IBIAS=80n IOFF=20n IOSC=25m PD=50m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA741M OPA (LEVEL=3 CMRR=31.6228K IBIAS=80n IOFF=20n IOSC=25m PD=50m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA741C OPA (LEVEL=3 CMRR=31.6228K IBIAS=80n IOFF=20n IOSC=25m PD=50m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA709M OPA (LEVEL=3 A=45K CMRR=31.6228K IBIAS=200n IOFF=50n PD=78m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA709C OPA (LEVEL=3 A=45K CMRR=31.6228K IBIAS=300n IOFF=100n PD=80m
+Text=+ ROUTAC=50 ROUTDC=75 VNS=-13.4 VOFF=2m VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** General purpose operational amplifier
+Text=.MODEL UA709AM OPA (LEVEL=3 A=45K CMRR=31.6228K IOFF=10n PD=75m ROUTAC=50
+Text=+ ROUTDC=75 VNS=-13.4 VOFF=600u VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Dual low-power Operational Amplifiers
+Text=.MODEL TL322I OPA (LEVEL=3 CMRR=31.6228K IBIAS=200n IOFF=30n IOSC=30m PD=150m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=600K SRP=600K TYPE=2 VNS=-11.9 VOFF=2m VPS=11.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Dual low-power Operational Amplifiers
+Text=.MODEL TL322C OPA (LEVEL=3 CMRR=31.6228K IBIAS=200n IOFF=30n IOSC=30m PD=150m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=600K SRP=600K TYPE=2 VNS=-12.9 VOFF=2m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Operational Amplifiers
+Text=.MODEL TL321I OPA (LEVEL=3 A=100K CMRR=17.7828K IBIAS=45n IOFF=3n PD=150m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=2MEG SRP=2MEG TYPE=2 VEE=0 VNS=650m VOFF=2m VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL288M OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=20m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL288I OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL288C OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL287I OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL287C OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Quad high-performance opamp
+Text=.MODEL TL136C OPA (LEVEL=3 A=300K CMRR=31.6228K GBW=3MEG IBIAS=40n IOFF=5n
+Text=+ PD=150m ROUTAC=50 ROUTDC=75 SRN=2MEG SRP=2MEG TYPE=2 VNS=-13.4 VOFF=500u
+Text=+ VPS=13.4)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL088M OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=20m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL088I OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL088C OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL087I OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL087C OPA (LEVEL=3 A=105K CMRR=44.6684K GBW=3MEG IBIAS=30p IOFF=5p
+Text=+ PD=60m ROUTAC=50 ROUTDC=75 SRN=18MEG SRP=18MEG TYPE=3 VNS=-12.9 VOFF=100u
+Text=+ VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL085C OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL084M OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL084I OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL084C OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL084BC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL084AC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL083M OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL083I OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL083C OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL083AC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL082M OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL082I OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL082C OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL082BC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL082AC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL081M OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL081I OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL081C OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL081BC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL081AC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL080M OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input opamp
+Text=.MODEL TL080I OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=20m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL080C OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL080AC OPA (LEVEL=3 CMRR=19.9526K GBW=3MEG IBIAS=30p IOFF=5p PD=60m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL074M OPA (LEVEL=3 CMRR=19.9526K IBIAS=65p IOFF=5p ROUTAC=50 ROUTDC=75
+Text=+ SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL074I OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL074C OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL074BC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL074AC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL072M OPA (LEVEL=3 CMRR=19.9526K IBIAS=65p IOFF=5p ROUTAC=50 ROUTDC=75
+Text=+ SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL072I OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL072C OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL072BC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL072AC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL071M OPA (LEVEL=3 CMRR=19.9526K IBIAS=65p IOFF=5p ROUTAC=50 ROUTDC=75
+Text=+ SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL071I OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL071C OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL071BC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL071AC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL070I OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL070C OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL070BC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL070AC OPA (LEVEL=3 GBW=3MEG IBIAS=65p IOFF=5p PD=20m ROUTAC=50
+Text=+ ROUTDC=75 SRN=13MEG SRP=13MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL066M OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL066I OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL066C OPA (LEVEL=3 A=6K CMRR=6.30957K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL066BC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** JFET-input operational amplifier
+Text=.MODEL TL066AC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL064I OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL064C OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL064BC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL064AC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL062I OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL062C OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL062BC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL062AC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL061I OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL061C OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL061BC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL061AC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL060I OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL060C OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m ROUTAC=50
+Text=+ ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\TIOPAMP.LBR
+Text=*** Low power JFET-input opamp
+Text=.MODEL TL060BC OPA (LEVEL=3 A=6K CMRR=19.9526K IBIAS=30p IOFF=5p PD=6m
+Text=+ ROUTAC=50 ROUTDC=75 SRN=3.5MEG SRP=3.5MEG TYPE=3 VNS=-12.9 VOFF=3m VPS=12.9)
+Text=*** From file D:\mc12cd\library\ON_SEMI.LIB
+Text=.MODEL D_CS80 UGATE (TPHLMN=0.15NS TPHLMX=0.5NS TPHLTY=0.3NS TPLHMN=0.15NS
+Text=+ TPLHMX=0.5NS TPLHTY=0.3NS)
+
+[InfoPage]
+InfoPage=True
+Warnings=True
+System=True
+Defines=True
+Array=True
+Model=True
+Measure=True
+MacroSubckt=True
+NotUsed=True
+ComponentCounts=True
+VariablizePaths=False
+DontShowPaths=False
+SimulationLog=True
+
+[Transient]
+WinID=1
+Window Placement=2,3, -1,-1, -8,-31, 26,26,1201,412
+Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
+WinBackGround Color=#FFFFFF
+Select Color=#FF0000
+Anchor Color=#000000
+Select Box Color=#000080
+Title
+AutoTitle=Yes
+Grid Color=#808080
+Grid Weight=1
+Grid Pattern=Dot6
+Tracker Foreground=Height=-15,FStyle=0,Color=#000000,Name=Arial
+Tracker Background=#FFFF00
+Baseline color=#0000FF
+BaseLine Weight=1
+CurveFit color=#FF0000
+CurveFit Weight=2
+CurveFit Pattern=Dash
+Static Grids=False
+PlusMark=False
+MinorLog25=Off
+LabelMinor=Off
+DataPoints=False
+Token=False
+Ruler=False
+XAxisGrids=True
+YAxisGrids=True
+MinorLogGrids=True
+BaseLine=False
+AlignZ=True
+Align Cursors=True
+TagFormatX=3
+TagFormatY=3
+FormulaFormat=2
+EndMode=SCALE
+Graph Background=#FFFFFF
+Tracker Intercept=False
+Tracker Mouse=True
+Tracker Cursor=True
+Tracker Cursor BranchInfo=False
+Horizontal Cursor=False
+Same Y Scales=Yes
+Enable X Scaling=True
+Enable Y Scaling=True
+Keep X Scales The Same=True
+Number of Grids X=5
+Number of Grids Y=5
+Cursor Select Color Primary=#C0C0C0
+Cursor Select Color Secondary=#FF0000
+Data Point Labels Color Fore=Height=-15,FStyle=0,Color=#000000,Name=Arial
+Data Point Labels Color Back=#FFFF00
+OperPoint=True
+OperPointOnly=False
+AutoScaleRanges=True
+FixedTimeStep=False
+DoPSS=False
+PSS_Periods="1"
+PSS_Iterations="5"
+PSS_Error="1u"
+PSS_ShowPlots=True
+FFT_NPts="8192"
+FFT_IncludeDCHarmonic=False
+FFT_AutoScale_Harmonics="10"
+PrinterAutoTile=No
+PrinterBlackBorder=No
+MonMaxShow=12
+MonPageWidth=66
+MonPlotWidth=21
+MonExprXWidth=142
+MonExprYWidth=367
+MonRangeXWidth=90
+MonRangeYWidth=90
+AnimateWait=None
+AnimateWaitTime=500
+AnimatePressAfter=0
+Save_For_Future=No
+Reduce_Display=1
+Reduce_Save=1
+Reduce_ThrowDataOut=0
+Num Out Header Left
+Num Out Header Center="$MC\n$user\n$company\n$Analysis of $name\n$date $time"
+Num Out Header Right
+Num Out Delimiter=32
+Num Out Write=True
+Num Out Write Main Header=True
+Num Out Write Limits=True
+Num Out Write Branch Header=True
+Num Out Write Models=False
+Num Out Write Zero Models=True
+Num Out Write Undefined Models=True
+Num Out Write Operating Point=True
+Num Out Write Measurement Values=True
+Num Out Write Tolerance Detail=True
+Num Out Write Values=True
+Num Out Write Waveform Header=True
+Num Out Allow Dup Y Expr=False
+Num Out Low="TSTART"
+Num Out High="TMAX"
+Num Out Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
+Num Out Window Placement=2,3, -1,-1, -8,-31, 78,78,1253,464
+Num Out Format=3
+Num Out HideNonSelected=False
+Num Out UseActualDataPoints=False
+AutoSaveWave=False
+Wave Format=16E
+State Variables Format=5E
+Print Individual Pages=False
+
+[Tools]
+Pos=Top
+SELECT=Yes
+PAN=Yes
+GRAPHIC=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+TRIANGLE=No
+STAR=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+META=No
+PARALLELOGRAM=No
+POLYCLOS=No
+POLYOPEN=No
+SCALE=Yes
+CURSOR=Yes
+MEASUREH=Yes
+MEASUREV=Yes
+TAG=Yes
+PTAG=Yes
+TEXT=Yes
+PROPERTY=Yes
+START=Yes
+STOP=Yes
+PAUSE=Yes
+RESUME=No
+DATAPTS=Yes
+TOKENS=Yes
+RULER=Yes
+PLUS=Yes
+XAXIS=Yes
+YAXIS=Yes
+MINORLOG=Yes
+LOG25=Yes
+BASELINE=Yes
+HORIZCUR=Yes
+GOTOX=Yes
+GOTOY=Yes
+GOTOPERF=Yes
+GOTOBRNC=Yes
+CLEAR_ACCUMULATED=Yes
+PDELETE_ALL_PLOTS=Yes
+NEXT=Yes
+NEXTIN=Yes
+PEAK=Yes
+VALLEY=Yes
+HIGH=Yes
+LOW=Yes
+INFLECTN=Yes
+GHIGH=Yes
+GLOW=Yes
+BOTTOM=Yes
+TOP=Yes
+WAVEFORMBUFFER=Yes
+AOUTPUT=Yes
+PKEY=Yes
+ENXSCALE=Yes
+ENYSCALE=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+AUTOSCALE=Yes
+RESTORESCALE=No
+COLOR=Yes
+FONT=Yes
+STYLE=Yes
+SELNEXT=No
+NORMALIZE=No
+NORMALIZE_MIN=No
+NORMALIZE_MAX=No
+ADD_TAG_LEFT=No
+ADD_TAG_RIGHT=No
+ADD_HORZ_TAG=No
+ADD_VERT_TAG=No
+ALIGN_CURSORS=No
+ALIGN_CURSORSZ=No
+CURSORTOCLIPBOARD=No
+TRACKER_CURSOR=No
+TRACKER_CURSOR_BRANCHINFO=No
+TRACKER_INTERCEPT=No
+TRACKER_MOUSE=No
+TOFRONT=Yes
+TOBACK=Yes
+SPLITCIRTEXTH=No
+SPLITCIRTEXTV=No
+SPACE_SPLITTERS_EVENLY=No
+NORMALCIR=No
+LABEL_WAVEFORM=No
+LABEL_DATA_POINTS=No
+WFB_ADD_TO_LIMITS=No
+ENVELOPE=No
+SAMEYSCALES=No
+KEEPXSCALESTHESAME=No
+CURVEFIT=No
+ADD_MARKER=No
+SHOWWATCH=No
+BP=No
+TOGGLEMODE=No
+REMOVEALLTEXT=No
+AUTOSCALEX=No
+LABELALLMINOR=No
+ALIGNLEFT=No
+ALIGNCENTER=No
+ALIGNRIGHT=No
+ALIGNTOP=No
+ALIGNMIDDLES=No
+ALIGNBOTTOM=No
+
+[APage]
+Analysis=Transient
+Name="MAIN"
+
+[Monte Carlo Options]
+Analysis=Transient
+Status=Off
+Zero Tolerance=False
+Eliminate Outliers=False
+Distribution=Normal
+Number of Runs=10
+Seed=0
+
+[Limits]
+Analysis=Transient
+TMax=10u
+TStart=0
+TStep=1n
+NPts=1000
+Temp=27
+RetraceRuns=1
+StateVar=Zero
+RunOption=Normal
+Temperature Type=Linear
+Accumulate Plots=False
+IgnoreExprErrors=False
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=1
+XExp=T
+YExp=d(CLK)
+XRng=AutoAlways
+YRng=45,-30
+Options=LINEARX,LINEARY
+Range Grid Y=15
+Enable=Enable
+Line Color=#0000FF
+Text Color=#0000FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=10
+XExp=T
+YExp=d(wCLK)
+XRng=AutoAlways
+YRng=45,-30
+Options=LINEARX,LINEARY
+Range Grid Y=15
+Enable=Enable
+Line Color=#FF0000
+Text Color=#FF0000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=11
+XExp=T
+YExp=d(EN)
+XRng=AutoAlways
+YRng=45,-30
+Options=LINEARX,LINEARY
+Range Grid Y=15
+Enable=Enable
+Line Color=#008000
+Text Color=#008000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=2
+XExp=T
+YExp=d(START)
+XRng=AutoAlways
+YRng=45,-30
+Options=LINEARX,LINEARY
+Range Grid Y=15
+Enable=Enable
+Line Color=#FF0000
+Text Color=#FF0000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=14
+XExp=T
+YExp=d(wSTART1)
+XRng=AutoAlways
+YRng=45,-30
+Options=LINEARX,LINEARY
+Range Grid Y=15
+Enable=Enable
+Line Color=#000000
+Text Color=#000000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=3
+XExp=T
+YExp=d(wRESET)
+XRng=AutoAlways
+YRng=45,-30
+Options=LINEARX,LINEARY
+Range Grid Y=15
+Enable=Enable
+Line Color=#008000
+Text Color=#008000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=4
+XExp=T
+YExp=v(ANALOG)
+XRng=AutoAlways
+YRng=5
+Options=LINEARX,LINEARY
+Range Grid Y=1
+Enable=Enable
+Line Color=#FF00FF
+Text Color=#FF00FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=1
+AliasID=7
+XExp=T
+YExp=v(U_DAC)
+XRng=AutoAlways
+YRng=5
+Options=LINEARX,LINEARY
+Range Grid Y=1
+Enable=Enable
+Line Color=#000000
+Text Color=#000000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=3
+AliasID=9
+XExp=T
+YExp=d(COMP)
+XRng=AutoAlways
+YRng=1.5,-1
+Options=LINEARX,LINEARY
+Range Grid Y=0.5
+Enable=Enable
+Line Color=#0000FF
+Text Color=#0000FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=4
+AliasID=8
+XExp=T
+YExp=bin(wQ7, wQ6, wQ5, wQ4, wQ3, wQ2, wQ1, wQ0)
+XRng=AutoAlways
+YRng=1.5,-1
+Options=LINEARX,LINEARY
+Range Grid Y=0.5
+Enable=Enable
+Line Color=#008000
+Text Color=#008000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=4
+AliasID=12
+XExp=T
+YExp=bin(Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0)
+XRng=AutoAlways
+YRng=1.5,-1
+Options=LINEARX,LINEARY
+Range Grid Y=0.5
+Enable=Enable
+Line Color=#0000FF
+Text Color=#0000FF
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[WaveForm]
+Analysis=Transient
+Plt=4
+AliasID=5
+XExp=T
+YExp=bin(ADC_Q7, ADC_Q6, ADC_Q5, ADC_Q4, ADC_Q3, ADC_Q2, ADC_Q1, ADC_Q0)
+XRng=AutoAlways
+YRng=1.5,-1
+Options=LINEARX,LINEARY
+Range Grid Y=0.5
+Enable=Enable
+Line Color=#FF0000
+Text Color=#FF0000
+Rainbow=False
+VFmtX=3
+VFmtY=3
+ScaleFactorX="None"
+ScaleFactorY="None"
+ScaleUnitsX="Auto"
+ScaleUnitsY="Auto"
+SFmtX=2
+SFmtY=2
+NOFmtX=3E
+NOFmtY=3E
+
+[Limits]
+Analysis=DynamicAC
+FirstValueDisplay=Mag
+SecondValueDisplay=PhaseDeg
+PlaceText=True
+
+[Limits]
+Analysis=DynamicDC
+PlaceText=True
+
+[Pane]
+Analysis=Transient
+CurrentPage 0="MAIN"
+
+[Pane]
+Analysis=AC
+
+[Pane]
+Analysis=DC
+
+[Pane]
+Analysis=HmDistortion
+
+[Pane]
+Analysis=ImDistortion
+
+[Pane]
+Analysis=Stability
+
+[Watch]
+Analysis=Transient
+Format=3
+ExprPercentWidth=80
+
+[WCTolerance]
+Var Width=100
+Nominal Width=72
+Tol Width=152
+Tol Name=Drift
+Col Width Neq=50
+Col Width Pos=50
+Col Width Rnd=50
+
+[WCFiles]
+UseFile=<Library>Standard.tlib
+AVAILABLE_FILE=<Library>Standard.tlib
+
+[OPMethods]
+Analysis=Transient
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=AC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=DC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=HmDistortion
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=ImDistortion
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=Stability
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=DynamicAC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=DynamicDC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
